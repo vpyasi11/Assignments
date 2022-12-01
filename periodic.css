@@ -1,0 +1,99 @@
+table,td{
+    text-align: center;
+    border-collapse:separate;
+    empty-cells: hide;
+    /* border-spacing: 1px; */
+    border:2px solid red;
+    margin: auto;
+    padding:20px;
+    /* border-radius: 10px; */
+    width:max-content;
+    font-weight: bold;
+    font-size:large;
+}
+
+table{
+    padding:0px;
+    border:none;
+}
+
+#caption{
+    font-size:50px;
+    background-color: yellow;
+    border:2px solid red;
+    /* border-bottom: none; */
+    padding:20px;
+    text-decoration: none;
+}
+
+.purple{
+    background-color:rgba(177, 86, 177, 0.63);
+}
+
+.cream{
+    background-color:rgb(247, 221, 107);
+}
+
+.pink{
+    background-color: lightsalmon
+}
+
+.blue{
+    background-color: aqua;
+}
+
+.brown{
+    background-color:goldenrod;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.grey{
+    background-color: rgba(128, 128, 128, 0.61);
+}
+
+.white{
+    background-color: rgba(245, 209, 161, 0.705);
+}
+
+
+
+#g{
+    color:green;
+}
+
+#b{
+    color:blue;
+}
+
+#r{
+    color:red;
+}
+
+#p{
+    color:purple
+}
+
+/* #blank{
+    border-bottom-style: none;
+} */
+
+td:hover{
+    color:red;
+    cursor:pointer;
+    background-color: yellow;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:red;
+
+}
+a:active{
+    color:green;
+}
