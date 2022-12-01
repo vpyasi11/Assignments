@@ -24,6 +24,7 @@ table{
     /* border-bottom: none; */
     padding:20px;
     text-decoration: none;
+    transform: none;
 }
 
 .purple{
@@ -84,6 +85,7 @@ td:hover{
     color:red;
     cursor:pointer;
     background-color: yellow;
+    transform: scale(1.2);
 }
 
 a:link{
