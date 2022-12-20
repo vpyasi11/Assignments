@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(lightblue, white); */
+    background-image: url(https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);   
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+form{    
+    border: 2px solid lightseagreen;   
+    width:50%;
+    height:85vh;
+    margin:50px auto;
+    /* background-image: linear-gradient(orangered, yellow); */
+    box-shadow: 5px 5px 20px black ;
+    border-radius: 10px;
+    /* filter:blur(5px); */
+    background-color:rgba(0,0,0,0.4);    
+}
+
+input{
+    padding:10px;
+    margin:20px;
+    border-radius: 20px;
+    width:50%;
+    /* background-color:transparent; */
+    border:none;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    border: 2px solid white;
+    text-align: center;
+    margin-left: 25%;
+    outline: none;   
+}
+
+input:hover{
+   background-color: white;
+   box-shadow: 5px 5px 50px lightseagreen;
+   border: 2px solid lightseagreen;
+}
+
+h1{
+    margin:20px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+label{
+    padding:20px;
+    margin:10px 5px;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 22%;
+}
+
+button{
+    text-align: center;
+    border:2px outset white;
+    width:20%;
+    margin:10px !important;
+    background-color: lightseagreen;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+button:hover{
+    background-color: white;
+    color:lightseagreen;
+    border:2px solid lightseagreen;
+    box-shadow: 5px 5px 50px lightseagreen;
+}
+
+.spinner{
+    border: 2px solid white;
+    height:20px;
+    width:20px;    
+    border-radius: 50%;
+    border-top: none;    
+    animation: spin 1s linear infinite;
+}
+
+#tag{
+    opacity:0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 120px;
+    justify-content: center;
+    align-items: center; 
+}
+
+#signin:hover + #tag{
+    opacity:1;
+}
+
+p{
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;    
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i{
+    margin-right:5px;
+    padding: 0 2px;    
+}
+
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
