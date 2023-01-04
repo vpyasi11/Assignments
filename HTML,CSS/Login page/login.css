@@ -6,6 +6,7 @@ body{
     background-image: url(https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);   
     background-repeat: no-repeat;
     background-size: cover; 
+    font-family: Helvetica;
 }
 
 form{    
@@ -40,6 +41,10 @@ input:hover{
    box-shadow: 5px 5px 50px lightseagreen;
    border: 2px solid lightseagreen;
 }
+form:focus-within{
+    background-color:rgba(0,0,0,0.55);
+}
+
 
 h1{
     margin:20px;
