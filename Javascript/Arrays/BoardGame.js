@@ -15,11 +15,10 @@ function rollDice(){
     return Math.floor(Math.random()*6)+1
 }
 
-let a = rollDice()
-let b = rollDice()
+let b = rollDice() // 1st dice roll by 'b'
+let a = rollDice() // 2nd dice roll by 'a'
 
 function possibleBonus(a,b){
-    
     
     if(a<b){
         if((b-a)>=6){
@@ -34,12 +33,12 @@ function possibleBonus(a,b){
     }
 }
 
-b=b+rollDice() // b rolled dice again
+b=b+rollDice() // b rolled dice again. Now it's 'a' turn
 
 //To check if bonus can be earned for next dice roll by 'a'
 
-console.log("a:"+a+"\nb:"+b+"\nresult:"+possibleBonus(a,b))
+console.log("\nPosition of 'a': "+ a + "\nPosition of 'b': " + b +"\nBonus Possibility ? : " + possibleBonus(a,b))
 
-console.log("a:"+3+"\nb:"+7+"\nresult:"+possibleBonus(3,7))
-console.log("a:"+1+"\nb:"+9+"\nresult:"+possibleBonus(1,9))
-console.log("a:"+5+"\nb:"+3+"\nresult:"+possibleBonus(5,3))
+// console.log("\nPosition of 'a': "+ 3 + "\nPosition of 'b': " + 7 +"\nBonus Possibility ? : " + possibleBonus(3,7))
+// console.log("\nPosition of 'a': "+ 1 + "\nPosition of 'b': " + 9 +"\nBonus Possibility ? : " + possibleBonus(1,9))
+// console.log("\nPosition of 'a': "+ 5 + "\nPosition of 'b': " + 3 +"\nBonus Possibility ? : " + possibleBonus(5,3))

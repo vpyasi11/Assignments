@@ -20,7 +20,7 @@ function nearestVowel(letter){
             position = i+1
         }
     }
-
+    
     if(position<=3){
         return 'a'
     }

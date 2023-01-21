@@ -10,6 +10,6 @@ function arrayOfMultiples(num, length){
         arr[i-1]=num*i
     }
     return arr
-}
+}  
 
 console.log(arrayOfMultiples(12,10))
