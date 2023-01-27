@@ -14,6 +14,7 @@ next.addEventListener("click",fwd)
 let score = 0 
 let currentIndex = 0
 let count = 0
+let flag = 0
 
 function begin(){
     startBtn.style.display = "none"
@@ -24,14 +25,23 @@ function begin(){
 }
 
 options.forEach(function(item){
-    item.addEventListener("click",function(){       
-        if(item.innerText == correct){
-            item.style.backgroundColor = "green"
-            score++
-            points.innerHTML = "Score : "+ score 
-        }
-        else{
-            item.style.backgroundColor = "red"
+    item.addEventListener("click",function(){     
+        if(flag == 0){  
+            if(item.innerText == correct){
+                item.style.backgroundColor = "green"
+                score++
+                points.innerHTML = "Score : "+ score 
+                flag = 1
+            }
+            else{
+                item.style.backgroundColor = "red"
+                flag = 1
+                options.forEach(function(item){
+                    if(item.innerHTML == correct){
+                        item.style.backgroundColor = "green"
+                    }
+                })
+            }
         }
     })
 })
@@ -53,6 +63,7 @@ function fwd(){
     options.forEach(function(item){
         item.style.backgroundColor = ""
     })
+    flag = 0
 
     if(currentIndex<questions.length){
         qs.innerText = questions[currentIndex]
@@ -71,7 +82,7 @@ function fwd(){
         next.innerHTML = "Reload"
         wel.classList.remove("hide")
         ques.classList.add("hide")
-        wel.innerHTML = "Play again ?<br> (You answered " + score + "/4 correctly)"
+        wel.innerHTML = "Take Quiz again ?<br> (You answered " + score + "/4 correctly)"
         next.onclick = reset
     }
 }
@@ -95,7 +106,8 @@ function check(x){
 
 function reset(){
     currentIndex = 0
-    count =0
+    count = 0
+    flag = 0
     score = 0
     
     ques.classList.remove("hide")
