@@ -1,3 +1,11 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
 #main{
     border: 2px solid lightsalmon;
 }
@@ -7,15 +15,8 @@
     width: 500px;
     padding: 15px;
     color: white;
-    
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-}
+
 #answer{
     display: flex;
     flex-direction: column;
@@ -26,12 +27,13 @@ body{
     margin: 10px;
     background-color: black;
     color: white;
-    border: 2px solid white;
+    border: 2px solid greenyellow;
     border-radius: 15px;
 }
 .btn:hover{
     color: black;
     background-color: white;
+    border: 2px solid black;
 }
 
 .container{
@@ -52,4 +54,8 @@ margin-top: 60px;
     font-size: 18px;
     margin: 10px;
     border-radius: 10px;
+}
+#detail{
+    display: flex;
+    justify-content:space-between;
 }
