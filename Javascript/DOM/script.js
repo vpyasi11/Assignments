@@ -5,7 +5,7 @@ const qs = document.getElementById("ques")
 const next = document.getElementById("next")
 const options = document.querySelectorAll(".btn")
 const ans = document.getElementById("answer")
-
+const val = document.getElementById("value")
 
 startBtn.onclick = begin
 
@@ -18,21 +18,21 @@ function begin(){
     next.style.display = "block"
     fwd()
 }
-options.forEach(function(item){
-    item.onclick = function(){
+// options.forEach(function(item){
+//     item.onclick = function(){
         
         
-        if(item.className == "btn correct"){
-            item.style.backgroundColor = "green"
-            score++
-            console.log(score)
-        }
-        else{
-            item.style.backgroundColor = "red"
-        }
-    }
+//         if(item.className == "btn correct"){
+//             item.style.backgroundColor = "green"
+//             score++
+//             console.log(score)
+//         }
+//         else{
+//             item.style.backgroundColor = "red"
+//         }
+//     }
     
-})
+// })
 
 
 // options.forEach(function(item){
@@ -50,11 +50,14 @@ const answers = [["getElementById()","getObject()","getElement()","getNode()"],
 ["1996","1995","1994","None of the above"]]
 
 next.addEventListener("click",fwd)
+let count =0
 
 function fwd(){
     if(currentIndex<questions.length){
     qs.innerText = questions[currentIndex]
     currentIndex++
+    count++
+    val.innerHTML = count
   
     var i = 0
     options.forEach(function(item){       
@@ -78,6 +81,7 @@ else{
 function abc(){
     currInd = 0
     currentIndex = 0
+    count =0
     console.log("yesssssssss")
     ques.classList.remove("hide")
     wel.classList.add("hide")
