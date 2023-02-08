@@ -14,7 +14,27 @@ body{
     border-radius: 15px;
     width: 500px;
     padding: 15px;
+    box-shadow: 5px 5px 20px yellow;
     color: white;
+}
+#explain{
+    color: yellowgreen;
+}
+#stats button:hover{
+    transform: scale(1.05);
+    background-color: white;
+}
+#Qno button{
+    margin-top: 15px;
+    /* padding: 10px; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: black;
+    border-color: yellow;
+    color: white;
+
 }
 
 #answer{
