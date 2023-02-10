@@ -18,6 +18,25 @@ let currentIndex = 0
 let count = 0
 let flag = 0
 
+const questions = 
+["How do we get the DOM object in JavaScript ?",
+"How are the objects organized in HTML DOM ?",
+"Which of the following can be implemented using animation ?",
+"What year was JavaScript launched ?"]
+
+const answers = [
+["getElementById()","getObject()","getElement()","getNode()"],
+["Class wise","Hierarchy","Stack","Queue"],
+["Fireworks","Fade effect","Roll-in or Roll-out","All of the above"],
+["1996","1995","1994","None of the above"]
+]
+
+const explaination = 
+["getElementByID() method in JavaScript is a document method. When we give a specific string which should match the ID of the HTML element, it returns the element object.",
+"The way a document content is accessed and modified is called the Document Object Model, or DOM. The Objects are organized in a hierarchy. This hierarchical structure applies to the organization of objects in a Web document.",
+"You can use JavaScript to create a complex animation which includes but not limited to above effects",
+"JavaScript was created at Netscape Communications by Brendan Eich in 1995. Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web browser, Netscape Navigator"]
+
 function begin(){
     startBtn.style.display = "none"
     wel.classList.add("hide")
@@ -52,24 +71,6 @@ options.forEach(function(item){
     })
 })
 
-const questions = 
-["How do we get the DOM object in JavaScript ?",
-"How are the objects organized in HTML DOM ?",
-"Which of the following can be implemented using animation ?",
-"What year was JavaScript launched ?"]
-
-const answers = [
-["getElementById()","getObject()","getElement()","getNode()"],
-["Class wise","Hierarchy","Stack","Queue"],
-["Fireworks","Fade effect","Roll-in or Roll-out","All of the above"],
-["1996","1995","1994","None of the above"]
-]
-
-const explaination = 
-["getElementByID() method in JavaScript is a document method. When we give a specific string which should match the ID of the HTML element, it returns the element object.",
-"The way a document content is accessed and modified is called the Document Object Model, or DOM. The Objects are organized in a hierarchy. This hierarchical structure applies to the organization of objects in a Web document.",
-"You can use JavaScript to create a complex animation which includes but not limited to above effects",
-"JavaScript was created at Netscape Communications by Brendan Eich in 1995. Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web browser, Netscape Navigator"]
 
 function fwd(){
     options.forEach(function(item){

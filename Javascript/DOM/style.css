@@ -3,26 +3,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     color: white;
+    background-image: linear-gradient(to right, lightseagreen, #f011ad, #ff8080);
 }
 #main{
     border: 2px solid lightsalmon;
 }
 #question{
-    border: 2px solid greenyellow;
-    border-radius: 15px;
+    border: 2px solid lightseagreen;
+    /* border-radius: 15px; */
     width: 500px;
     padding: 15px;
-    box-shadow: 5px 5px 20px yellow;
+    box-shadow: 5px 5px 20px lightseagreen;
     color: white;
+    background-color:rgba(0,0,0,0.5);
 }
 #explain{
-    color: yellowgreen;
+    color: white;
 }
 #stats button:hover{
     transform: scale(1.05);
     background-color: white;
+    color: lightseagreen;
+    border: 2px solid lightseagreen;
 }
 #Qno button{
     margin-top: 15px;
@@ -31,8 +34,8 @@ body{
     width: 40px;
     height: 40px;
     margin-left: 20px;
-    background-color: black;
-    border-color: yellow;
+    background-color: transparent;
+    border-color: white;
     color: white;
 
 }
@@ -45,15 +48,13 @@ body{
 .btn{
     padding: 10px;
     margin: 10px;
-    background-color: black;
+    background-color: transparent;
     color: white;
-    border: 2px solid greenyellow;
-    border-radius: 15px;
+    border-image: linear-gradient(to right, lightseagreen, #f011ad, #ff8080)1;
+    border-width: 2px;
 }
 .btn:hover{
-    color: black;
-    background-color: white;
-    border: 2px solid black;
+    background-image: linear-gradient(to right, lightseagreen, #f011ad, #ff8080);
 }
 
 .container{
@@ -69,11 +70,12 @@ margin-top: 60px;
 #stats button{
     width: 200px;
     padding: 10px;
-    color: black;
-    background-color: greenyellow;
+    color:white;
+    border: 2px solid white;
+    background-color: lightseagreen;
     font-size: 18px;
     margin: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 #detail{
     display: flex;
