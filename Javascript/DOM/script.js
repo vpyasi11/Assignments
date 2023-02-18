@@ -71,7 +71,6 @@ options.forEach(function(item){
     })
 })
 
-
 function fwd(){
     options.forEach(function(item){
         item.style.backgroundColor = ""

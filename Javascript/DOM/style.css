@@ -58,8 +58,23 @@ body{
 }
 
 .container{
-margin-top: 60px;
+    margin-top: 60px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
+/* #prev{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: lightseagreen;
+    border: 1px solid white;
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+    width: 70px;
+    height: 70px;
+} */
+
 #ques{
     margin: 10px;
     padding: 20px;
