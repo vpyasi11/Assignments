@@ -120,6 +120,10 @@ class linkedList{
         }
         console.log(`Total Purchase in year ${year} : ${total}`)
     }
+
+    sort(){
+        
+    }
 }
 
 let cust1 = new linkedList()
