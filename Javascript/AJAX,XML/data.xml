@@ -1,0 +1,74 @@
+ <RESTAURANTs>
+    <restaurant>
+        <name>Yellow chilli</name>
+        <address>New Delhi</address>
+        <lat>47.608940</lat>
+        <lng>-122.340141</lng>
+        <type>sitdown</type>
+    </restaurant>
+    <restaurant>
+        <name>Fork n Spoon</name>
+        <address>Mumbai</address>
+        <lat>58.546545</lat>
+        <lng>-45.215466</lng>
+        <type>sitdown</type>
+    </restaurant>
+    <restaurant>
+        <name>Eagle's Cafe</name>
+        <address>Bhopal</address>
+        <lat>54.454553</lat>
+        <lng>-123.546546</lng>
+        <type>bar</type>
+    </restaurant>
+    <restaurant>
+        <name>Indian coffee house</name>
+        <address>Indore</address>
+        <lat>98.225533</lat>
+        <lng>-23.5466545</lng>
+        <type>sitdown</type>
+    </restaurant>
+    <restaurant>
+        <name>Infinity</name>
+        <address>kolkata</address>
+        <lat>45.535345</lat>
+        <lng>-78.646466</lng>
+        <type>bar</type>
+    </restaurant>
+    <restaurant>
+        <name>Hard rock cafe</name>
+        <address>Bangalore</address>
+        <lat>22.5465462</lat>
+        <lng>-8.4534534</lng>
+        <type>bar</type>
+    </restaurant>
+    <restaurant>
+        <name>Delhi durbar</name>
+        <address>New Delhi</address>
+        <lat>88.4654654</lat>
+        <lng>-63.5453435</lng>
+        <type>sitdown</type>
+    </restaurant>
+    <restaurant>
+        <name>Barbeque Nation</name>
+        <address>Pune</address>
+        <lat>62.4646565</lat>
+        <lng>-52.54654646</lng>
+        <type>sitdown</type>
+    </restaurant>
+    <restaurant>
+        <name>East street cafe</name>
+        <address>shillong</address>
+        <lat>96.5453453</lat>
+        <lng>-72.64646665</lng>
+        <type>bar</type>
+    </restaurant>
+    <restaurant>
+        <name>Sky lounge and bar</name>
+        <address>kanpur</address>
+        <lat>35.6846466</lat>
+        <lng>-89.64646654</lng>
+        <type>bar</type>
+    </restaurant>
+ </RESTAURANTs>
+ 
+  <!-- < restaurant name="yellow chilli" address="new delhi" lat="47.608940" lng="-122.340141" type="sitdown"/> -->
