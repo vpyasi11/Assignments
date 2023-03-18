@@ -5,11 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Population</title>
+    <style>
+        body{
+            background-color: palevioletred;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            /* width: 60%; */
+            /* outline: 2px 2px 2px black; */
+            border: 1px solid blueviolet;
+            border-radius: 15px;
+            height: 30px;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            margin: 15px;
+            text-transform: capitalize;
+            width: 300px;
+        }
+        button{
+            background-color: blueviolet;
+            color: white;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-size: 15px;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+        }
+        #list li{
+            /* list-style: none; */
+            font-size: 30px;
+        }
+        /* #list{
+            background-color: lightseagreen;
+            border: 2px solid blueviolet;
+            padding: 15px;
+            border-radius: 15px;
+        } */
+
+        
+    </style>
 </head>
 <body>
     
         <form action="">
-            <input type="text" id="country">
+            <input type="text" id="country" placeholder="Enter any country name">
             
         </form>
         <button onclick="load()">Add</button>

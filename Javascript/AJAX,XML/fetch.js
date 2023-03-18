@@ -24,6 +24,7 @@ function load(){
             
             const toDoList = document.querySelector("ul");
             var flag = 0
+            
             // loop
             
             for(let i=0; i<data.data.length; i++){
@@ -32,7 +33,7 @@ function load(){
 
                 if(country.toLowerCase() == data.data[i].country.toLowerCase()){
                     const toDoElements = document.createElement("li");
-                    toDoElements.innerHTML = `${data.data[i].country} : ${data.data[i].populationCounts[data.data[i].populationCounts.length-1].value}`;
+                    toDoElements.innerHTML = `${data.data[i].country} : ${data.data[i].populationCounts[data.data[i].populationCounts.length-1].value/10000000} Cr`;
                     toDoList.appendChild(toDoElements)
                     flag = 1
                     break;

@@ -89,10 +89,19 @@ class linkedList{
         else{
             this.tail.next = newNode;
             this.tail = newNode;   
+            this.tail.next = null
             this.length++;
         }
     
        return this;
+    }
+
+    printBill(){
+        let curr = this.head
+        while(curr !== null){
+            console.log(curr.bill_amount)
+            curr = curr.next
+        }
     }
 
     details(name){
@@ -120,10 +129,6 @@ class linkedList{
         }
         console.log(`Total Purchase in year ${year} : ${total}`)
     }
-
-    sort(){
-        
-    }
 }
 
 let cust1 = new linkedList()
@@ -131,10 +136,10 @@ cust1.append(101, "suresh", "15/12/2022", 1020)
 cust1.append(102,"vishu","12/12/2022",2000)
 cust1.append(103,"abc","2/2/2023",20)
 // console.log(cust1)
-// console.log(cust1.sort())
-// console.log(cust1)
-cust1.details("vishu")
-cust1.totalPurchase("2023")
+cust1.sort()
+// cust1.printBill()
+// cust1.details("vishu")
+// cust1.totalPurchase("2023")
 
 
 
