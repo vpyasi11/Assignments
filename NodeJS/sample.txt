@@ -1,0 +1,12 @@
+Hello World!
+Array
+
+
+This is a sample text file.
+Pqr
+ABC
+
+#abc
+# comment
+
+

@@ -1,0 +1,5 @@
+ABC
+Array
+Hello World!
+Pqr
+This is a sample text file.

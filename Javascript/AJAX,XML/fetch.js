@@ -46,6 +46,6 @@ function load(){
         })
         .catch(error => console.log(error))
 
-        // country.innerHTML = ""
+        document.getElementById("country").value = ""
 }
 
