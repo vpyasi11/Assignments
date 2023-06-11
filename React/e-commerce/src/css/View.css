@@ -1,0 +1,22 @@
+.cards{
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.cards button:hover {
+    background-color: white;
+    color: seagreen;
+}
+
+.cards button {
+    background-color: seagreen;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    margin: 5px;
+}
+
